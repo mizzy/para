@@ -46,9 +46,5 @@ func run(cmd string, arg string) error {
 	go logger.Error(stderrPipe)
 	go logger.Info(stdoutPipe)
 
-	if err = c.Wait(); err != nil {
-		return err
-	}
-
-	return nil
+	return c.Wait()
 }
