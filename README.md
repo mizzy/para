@@ -1,6 +1,6 @@
 # para
 
-Simple command line tool to run commands in parallel.
+Simple command line tool to run commands in parallel written in Go.
 
 ## How to use
 
