@@ -15,9 +15,8 @@ type logger struct {
 
 func New(arg string) *logger {
 	c := determineColor(arg)
-	prefix := c(fmt.Sprintf("[%s]", arg))
 	return &logger{
-		prefix: fmt.Sprintf("%s ", prefix),
+		prefix: c(fmt.Sprintf("[%s]", arg)),
 	}
 }
 
