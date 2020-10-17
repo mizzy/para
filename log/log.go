@@ -45,7 +45,7 @@ var colorList = []color.Color{
 	color.BgDarkGray,
 	color.BgLightRed,
 	color.BgLightGreen,
-	color.BgLightYellow,
+	//color.BgLightYellow,
 	color.BgLightBlue,
 	color.BgLightMagenta,
 	color.BgLightCyan,
