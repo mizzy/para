@@ -56,5 +56,5 @@ func determineColor(arg string) func(...interface{}) string {
 	hash := fnv.New32()
 	hash.Write([]byte(arg))
 	idx := hash.Sum32() % uint32(len(colorList))
-	return color.New(colorList[idx], color.OpBold).Render
+	return color.New(colorList[idx], color.FgDefault, color.OpBold).Render
 }
